@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <!-- Update the "Home" button -->
+      <li><button onclick="resetToFakeBooks()">Home</button></li>
+      <li><a href="#" onclick="showAddBookForm()">Add Book</a></li>
+      <li><a href="#" onclick="showRemoveBookForm()">Remove Book</a></li>
+    </ul>
+  </nav>
+
+  <h1>Awesome Books</h1>
+
+  <div id="bookList">
+    <!-- Display books here -->
+  </div>
+
+  <div id="addBookForm" style="display:none;">
+    <input type="text" id="bookTitle" placeholder="Enter book title">
+    <button onclick="addBook()">Add Book</button>
+  </div>
+
+  <div id="removeBookForm" style="display:none;">
+    <input type="text" id="removeBookTitle" placeholder="Enter book title to remove">
+    <button onclick="removeBook()">Remove Book</button>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
